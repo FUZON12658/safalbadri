@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+*.tsbuildinfo
+next-env.d.ts
+.env*.local
+
+# Client's original photos (~140 MB, mostly HEIC); the site uses the processed copies in public/images
+source-photos/

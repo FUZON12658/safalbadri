@@ -1,0 +1,57 @@
+export type GalleryCat = 'personal' | 'field' | 'travels';
+
+/** A photo in /gallery. `pos` is the focal point used when the tile crops the image. */
+export type GalleryPhoto = { src: string; cat: GalleryCat; ar: string; en: string; ne: string; pos?: string };
+
+const P = (src: string, cat: GalleryCat, ar: string, en: string, ne: string, pos?: string): GalleryPhoto => ({ src, cat, ar, en, ne, pos });
+
+// Only photos in which Badri Raj Timalsina is visible. Every photo from the client's second batch appears here.
+export const GALLERY: GalleryPhoto[] = [
+  P('badri/dhaka-topi', 'personal', '4/5', 'In a dhaka topi', 'ढाका टोपीमा', '50% 25%'),
+  P('badri/statue-of-liberty', 'travels', '3/4', 'Statue of Liberty, New York', 'स्ट्याच्यु अफ लिबर्टी, न्युयोर्क', '50% 60%'),
+  P('badri/portrait-desk', 'personal', '16/9', 'Portrait', 'पोर्ट्रेट', '64% 40%'),
+  P('badri/fnj-kavre', 'field', '3/4', 'Felicitated at FNJ Kavre', 'नेपाल पत्रकार महासंघ, काभ्रेमा सम्मानित', '50% 40%'),
+  P('badri/niagara', 'travels', '4/3', 'Niagara Falls', 'नायग्रा झरना'),
+  P('badri/chairman-desk', 'field', '3/2', 'Garlanded at the president’s desk', 'अध्यक्षको कुर्सीमा माल्यार्पण', '50% 35%'),
+  P('badri/young-portrait', 'personal', '4/3', 'The early years', 'सुरुवाती दिन', '45% 40%'),
+  P('badri/cnn-center', 'travels', '4/3', 'CNN Center, Atlanta', 'सीएनएन सेन्टर, एटलान्टा'),
+  P('badri/nepal-flag', 'personal', '4/5', 'With the flag of Nepal', 'नेपालको झण्डासँग', '50% 20%'),
+  P('badri/beverly-hills', 'travels', '3/4', 'Beverly Hills at night', 'राति बेभर्ली हिल्स', '50% 60%'),
+  P('badri/early-years', 'personal', '3/4', 'In my twenties', 'बीसको दशकमा', '50% 30%'),
+  P('badri/yellow-jacket', 'personal', '4/5', 'In a mustard blazer', 'पहेँलो ब्लेजरमा', '50% 30%'),
+  P('badri/white-house', 'travels', '4/3', 'The White House, Washington, D.C.', 'ह्वाइट हाउस, वासिङ्टन डीसी'),
+  P('badri/with-students', 'field', '4/5', 'With students', 'विद्यार्थीसँग', '75% 50%'),
+  P('badri/portrait-namaste', 'personal', '2/3', 'Namaste', 'नमस्ते', '50% 30%'),
+  P('badri/vessel-nyc', 'travels', '3/4', 'The Vessel, New York', 'भेसल, न्युयोर्क', '50% 60%'),
+  P('badri/early-stage', 'personal', '4/3', 'The theatre years', 'रंगमञ्चका दिन', '55% 35%'),
+  P('badri/lake-tahoe', 'travels', '4/3', 'Lake Tahoe in winter', 'हिउँदमा लेक टाहो'),
+  P('badri/portrait-coat', 'personal', '1/1', 'In a winter coat', 'जाडोको कोटमा', '50% 25%'),
+  P('badri/community-meeting', 'field', '4/3', 'Speaking at a programme', 'कार्यक्रममा सम्बोधन'),
+  P('badri/universal-studios', 'travels', '3/4', 'Universal Studios, Hollywood', 'युनिभर्सल स्टुडियोज, हलिउड', '50% 88%'),
+  P('badri/portrait-office', 'personal', '4/5', 'At work in Kathmandu', 'काठमाडौंमा कामका क्रममा', '50% 30%'),
+  P('badri/mumbai', 'travels', '4/3', 'Gateway harbour, Mumbai', 'गेटवे बन्दरगाह, मुम्बई'),
+  P('badri/early-portrait', 'personal', '4/5', 'An early portrait', 'पुरानो पोर्ट्रेट', '50% 25%'),
+  P('badri/niagara-night', 'travels', '4/3', 'Niagara Falls by night', 'राति नायग्रा झरना'),
+  P('badri/portrait-check', 'personal', '2/3', 'In a check blazer', 'चेक ब्लेजरमा', '50% 25%'),
+  P('badri/chiwang-selfie', 'field', '4/5', 'In Chiwang, Solukhumbu', 'चिवाङ, सोलुखुम्बुमा'),
+  P('badri/statue-of-liberty-2', 'travels', '3/4', 'Liberty Island, New York', 'लिबर्टी आइल्यान्ड, न्युयोर्क', '50% 60%'),
+  P('badri/portrait-teal', 'personal', '2/3', 'In a teal blazer', 'टिल ब्लेजरमा', '50% 30%'),
+  P('badri/wwii-memorial', 'travels', '4/3', 'World War II Memorial, Washington, D.C.', 'दोस्रो विश्वयुद्ध स्मारक, वासिङ्टन डीसी'),
+  P('badri/dhaka-topi-yellow', 'personal', '2/3', 'In a dhaka topi and daura', 'ढाका टोपी र दौरामा', '50% 25%'),
+  P('badri/coca-cola', 'travels', '4/3', 'World of Coca-Cola, Atlanta', 'वर्ल्ड अफ कोका-कोला, एटलान्टा'),
+  P('badri/portrait-blue', 'personal', '3/4', 'At a dinner meeting', 'भोज बैठकमा', '50% 30%'),
+  P('badri/maserati', 'travels', '3/4', 'On the road', 'यात्रामा', '50% 40%'),
+  P('badri/early-community', 'field', '4/3', 'Community work in the early years', 'सुरुवाती दिनको सामुदायिक काम'),
+  P('badri/honolulu', 'travels', '4/3', 'Honolulu, Hawaiʻi', 'होनोलुलु, हवाई'),
+  P('badri/portrait-red-tie', 'personal', '3/4', 'In a red tie', 'रातो टाईमा', '50% 30%'),
+  P('badri/white-house-fence', 'travels', '4/3', 'Outside the White House', 'ह्वाइट हाउस बाहिर'),
+  P('badri/portrait-seated', 'personal', '4/5', 'In the office', 'कार्यालयमा', '50% 30%'),
+  P('badri/pashupatinath-usa', 'travels', '4/3', 'Shree Pashupatinath and Buddha Mandir, USA', 'श्री पशुपतिनाथ तथा बुद्ध मन्दिर, अमेरिका'),
+  P('badri/portrait-coat-standing', 'personal', '3/4', 'In a long coat', 'लामो कोटमा', '50% 25%'),
+  P('badri/cnn-selfie', 'travels', '4/3', 'At CNN Center', 'सीएनएन सेन्टरमा'),
+  P('badri/with-friends', 'personal', '4/3', 'With friends', 'साथीहरूसँग'),
+  P('badri/portrait-teal-2', 'personal', '2/3', 'Portrait in teal', 'टिल पोर्ट्रेट', '50% 25%'),
+  P('badri/portrait-coat-long', 'personal', '3/4', 'Winter portrait', 'जाडोको पोर्ट्रेट', '50% 25%'),
+  P('badri/studio', 'personal', '4/3', 'On air in the studio', 'स्टुडियोमा प्रसारणका क्रममा', '50% 35%'),
+  P('badri/casual', 'personal', '3/4', 'Off duty', 'फुर्सदमा', '50% 30%'),
+];
