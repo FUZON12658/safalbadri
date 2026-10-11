@@ -107,7 +107,7 @@ export default function ImpactPage() {
         <div className="grid-split grid-split--380 end" style={{ gap: '24px clamp(32px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 20 }}>
             <Kicker>{t.piskar.k}</Kicker>
-            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--hs))' }}>{t.piskar.title}</h2>
+            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--h-b))' }}>{t.piskar.title}</h2>
           </div>
           <p className="body-lg">{t.piskar.body}</p>
         </div>
@@ -115,14 +115,14 @@ export default function ImpactPage() {
           <div style={{ flex: '1 1 340px', minWidth: 0 }}>
             <div className="stack" style={{ position: 'sticky', top: 'calc(var(--hh, 66px) + 40px)', gap: 16 }}>
               <span className="label muted">{t.piskar.stepsK}</span>
-              <span data-chapter-big="1" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(96px,14vw,240px) * var(--hs))', lineHeight: 0.85, letterSpacing: '-.06em', color: 'var(--color-accent)', fontFeatureSettings: "'tnum' 1" }}>{p(1)}</span>
+              <span data-chapter-big="1" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(96px,14vw,240px) * var(--h-b))', lineHeight: 0.85, letterSpacing: '-.06em', color: 'var(--color-accent)', fontFeatureSettings: "'tnum' 1" }}>{p(1)}</span>
               <span data-story-idx="1" className="tnum" style={{ fontSize: 13, fontWeight: 800 }}>{p(1)} / {p(t.piskar.steps.length)}</span>
             </div>
           </div>
           <div className="stack" style={{ flex: '1.3 1 440px', minWidth: 0 }}>
             {t.piskar.steps.map((s, i) => (
               <article key={i} data-chapter="1" data-dim="1" data-big={p(i + 1)} className="stack bt" style={{ gap: 16, padding: '36px 0 52px', transition: 'opacity .5s ease' }}>
-                <h3 className="hl" style={{ fontSize: 'calc(clamp(28px,2.8vw,46px) * var(--hs))', letterSpacing: '-.025em' }}>{s.title}</h3>
+                <h3 className="hl" style={{ fontSize: 'calc(clamp(28px,2.8vw,46px) * var(--h-c))', letterSpacing: '-.025em' }}>{s.title}</h3>
                 <p className="body-lg" style={{ maxWidth: '44ch' }}>{s.body}</p>
               </article>
             ))}
@@ -134,7 +134,7 @@ export default function ImpactPage() {
         <div className="wrap grid-split center" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(96px,14vh,180px)', gap: '48px clamp(40px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 24 }}>
             <Kicker>{t.chiwang.k}</Kicker>
-            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--hs))' }}>{t.chiwang.title}</h2>
+            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--h-b))' }}>{t.chiwang.title}</h2>
             <p className="body-lg" style={{ maxWidth: '44ch' }}>{t.chiwang.body}</p>
           </div>
           <figure className="stack" style={{ gap: 10 }}>
@@ -148,7 +148,7 @@ export default function ImpactPage() {
         <div className="wrap grid-split grid-split--380 end" style={{ gap: '24px clamp(32px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 20 }}>
             <Kicker>{t.relief.k}</Kicker>
-            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--hs))' }}>{t.relief.title}</h2>
+            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--h-b))' }}>{t.relief.title}</h2>
           </div>
           <p className="body-lg">{t.relief.body}</p>
         </div>
@@ -158,7 +158,7 @@ export default function ImpactPage() {
         <div className="wrap sec grid-split grid-split--380" style={{ gap: '40px clamp(32px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 20 }}>
             <Kicker>{t.rc.k}</Kicker>
-            <h2 className="headline" style={{ marginLeft: '-.04em', fontSize: 'calc(clamp(34px,4.2vw,72px) * var(--hs))', letterSpacing: '-.035em' }}>{t.rc.title}</h2>
+            <h2 className="headline" style={{ marginLeft: '-.04em', fontSize: 'calc(clamp(34px,4.2vw,72px) * var(--h-b))', letterSpacing: '-.035em' }}>{t.rc.title}</h2>
           </div>
           <div className="stack">
             {t.rc.areas.map((a, i) => (

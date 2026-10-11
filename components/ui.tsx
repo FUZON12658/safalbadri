@@ -25,7 +25,7 @@ export function Manifesto({ text, className, style }: { text: string; className?
 }
 
 /** Standard sub-page opening: kicker + display lines on the left, lede on the right. */
-export function PageHero({ kicker, lines, lede, size = 'calc(clamp(52px,9vw,168px) * var(--hs))', children, aside }: {
+export function PageHero({ kicker, lines, lede, size = 'calc(clamp(52px,9vw,168px) * var(--h-a))', children, aside }: {
   kicker: string; lines: string[]; lede?: ReactNode; size?: string; children?: ReactNode; aside?: ReactNode;
 }) {
   return (

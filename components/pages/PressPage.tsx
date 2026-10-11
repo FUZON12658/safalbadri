@@ -64,7 +64,7 @@ export default function PressPage() {
           {t.caps.map(([pub, topic], i) => (
             <div key={i} data-reveal="0" className="bb" style={{ display: 'grid', gridTemplateColumns: '44px minmax(0,1.1fr) minmax(0,1fr)', gap: '8px 20px', alignItems: 'baseline', padding: 'clamp(18px,2.4vw,28px) 0' }}>
               <span className="num">{p(i + 1)}</span>
-              <span className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(22px,2.4vw,38px) * var(--hs))', letterSpacing: '-.025em' }}>{pub}</span>
+              <span className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(22px,2.4vw,38px) * var(--h-c))', letterSpacing: '-.025em' }}>{pub}</span>
               <span style={{ fontSize: 16, lineHeight: 1.5, color: 'color-mix(in srgb,var(--color-text) 78%,transparent)' }}>{topic}</span>
             </div>
           ))}
@@ -75,7 +75,7 @@ export default function PressPage() {
         <div className="wrap grid-split grid-split--380" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(96px,14vh,180px)', gap: '40px clamp(32px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 20 }}>
             <Kicker>{t.hon.k}</Kicker>
-            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--hs))' }}>{t.hon.title}</h2>
+            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--h-b))' }}>{t.hon.title}</h2>
             <p style={{ maxWidth: '38ch', fontSize: 17, color: 'color-mix(in srgb,var(--color-bg) 78%,transparent)' }}>{t.hon.body}</p>
             <figure className="stack" style={{ gap: 10, marginTop: 16, maxWidth: 380 }}>
               <div className="media" style={{ aspectRatio: '4/5' }}><img data-parallax="-0.06" className="px-sm" src={img('badri/fnj-kavre', 'md')} alt={t.hon.fig} loading="lazy" style={{ objectPosition: '50% 40%' }} /></div>
@@ -99,7 +99,7 @@ export default function PressPage() {
 
       <section className="wrap sec">
         <Kicker>{t.lead.k}</Kicker>
-        <h2 className="headline" style={{ marginTop: 24, marginLeft: '-.04em', fontSize: 'calc(clamp(34px,4.2vw,72px) * var(--hs))', letterSpacing: '-.035em', maxWidth: '16em' }}>{t.lead.title}</h2>
+        <h2 className="headline" style={{ marginTop: 24, marginLeft: '-.04em', fontSize: 'calc(clamp(34px,4.2vw,72px) * var(--h-b))', letterSpacing: '-.035em', maxWidth: '16em' }}>{t.lead.title}</h2>
         <div className="cells cols-300" style={{ marginTop: 'clamp(40px,7vh,80px)' }}>
           {t.lead.items.map((ld, i) => (
             <div key={i} style={{ padding: '28px 24px 36px' }}>

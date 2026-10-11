@@ -31,9 +31,14 @@
   --font-heading-weight: 800;
 
   --gut: clamp(20px, 4vw, 64px);
-  /* Heading scale: every heading size is multiplied by this (1 = original design sizes).
-     Not applied to the name in the hero/footer or to the menu. */
-  --hs: .75;
+  /* Newspaper hierarchy: heading sizes are the original design sizes multiplied by their tier
+     (1 = original). Not applied to the name in the hero/footer or to the menu.
+     a = page headlines (each page's opening title, the closing banner)
+     b = section headlines and big display numbers
+     c = sub-heads: chapter, card and item titles */
+  --h-a: .8;
+  --h-b: .55;
+  --h-c: .65;
   /* "Badri Raj Timalsina": hero title and footer wordmark share this size. */
   --name-size: clamp(48px, min(7.6vw, 15vh), 176px);
   --ease-out: cubic-bezier(.16, 1, .3, 1);
@@ -149,7 +154,7 @@ button { font: inherit; }
 .on-accent .body-lg, .on-accent .body-md, .on-ink .body-lg, .on-ink .body-md { color: color-mix(in srgb, var(--color-bg) 80%, transparent); }
 .stat {
   font-family: var(--font-heading); font-weight: 800; line-height: 1; letter-spacing: -.04em;
-  font-size: calc(clamp(56px, 6vw, 104px) * var(--hs)); color: var(--color-accent); font-feature-settings: 'tnum' 1;
+  font-size: calc(clamp(56px, 6vw, 104px) * var(--h-b)); color: var(--color-accent); font-feature-settings: 'tnum' 1;
 }
 .caption { margin-top: 12px; font-size: 13px; color: color-mix(in srgb, var(--color-text) 70%, transparent); }
 .caption-row { display: flex; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; }
@@ -506,7 +511,7 @@ textarea.input { min-height: 160px; resize: vertical; }
 }
 .journey__head { padding: 0 var(--gut); display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 16px clamp(24px, 4vw, 72px); align-items: end; }
 .journey__year {
-  display: block; font-family: var(--font-heading); font-weight: 800; font-size: calc(clamp(56px, min(11vw, 17vh), 200px) * var(--hs));
+  display: block; font-family: var(--font-heading); font-weight: 800; font-size: calc(clamp(56px, min(11vw, 17vh), 200px) * var(--h-b));
   line-height: .86; letter-spacing: -.055em; color: var(--color-accent); font-feature-settings: 'tnum' 1; white-space: nowrap;
 }
 .journey__track { box-sizing: border-box; display: flex; width: max-content; height: 100%; padding: clamp(14px, 2.4vh, 24px) var(--gut) 0; will-change: transform; }

@@ -50,7 +50,7 @@ export default function SiteFooter({ banner = true }: { banner?: boolean }) {
       {banner && (
         <section className="on-accent" aria-label={t.write}>
           <div className="wrap stack" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(56px,9vh,100px)', gap: 'clamp(44px,7vh,88px)' }}>
-            <h2 className="display" style={{ fontSize: 'calc(clamp(52px,10.4vw,200px) * var(--hs))' }}>
+            <h2 className="display" style={{ fontSize: 'calc(clamp(52px,10.4vw,200px) * var(--h-a))' }}>
               <span data-reveal="0" style={{ display: 'block' }}>{t.l1}</span>
               <span data-reveal="1" style={{ display: 'block' }}>{t.l2}</span>
             </h2>

@@ -91,7 +91,7 @@ export default function JournalPage() {
                     <span className="muted">{fmtDate(c.date, lang)}</span>
                     <span className="tag tag-outline" lang={c.lang}>{c.lang === 'ne' ? 'नेपाली' : 'EN'}</span>
                   </div>
-                  <h2 className="hl" lang={c.lang} style={{ fontSize: 'calc(clamp(26px,3vw,48px) * var(--hs))', letterSpacing: '-.03em' }}>{c.title}</h2>
+                  <h2 className="hl" lang={c.lang} style={{ fontSize: 'calc(clamp(26px,3vw,48px) * var(--h-c))', letterSpacing: '-.03em' }}>{c.title}</h2>
                   <p lang={c.lang} style={{ fontSize: 16, lineHeight: 1.55, maxWidth: '52ch', color: 'color-mix(in srgb,var(--color-text) 75%,transparent)' }}>{c.standfirst}</p>
                   <span className="label" style={{ display: 'flex', alignItems: 'center', gap: 6, color: 'var(--color-accent-700)' }}>{t.read}<ArrowUpRight /></span>
                 </div>
@@ -110,7 +110,7 @@ export default function JournalPage() {
               <div key={x.k} style={{ padding: '28px 24px 36px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 16, minHeight: 220 }}>
                   <span className="num">{p(i + 1)}</span>
-                  <h2 className="display" style={{ fontSize: 'calc(clamp(40px,4.4vw,72px) * var(--hs))' }}>{x.t}</h2>
+                  <h2 className="display" style={{ fontSize: 'calc(clamp(40px,4.4vw,72px) * var(--h-b))' }}>{x.t}</h2>
                   <p style={{ marginTop: 'auto', fontSize: 16, lineHeight: 1.6, maxWidth: '36ch', color: 'color-mix(in srgb,var(--color-text) 82%,transparent)' }}>{x.d}</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function JournalPage() {
           </div>
           <div style={{ marginTop: 'clamp(40px,7vh,72px)', display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,360px),1fr))', gap: '24px clamp(32px,6vw,112px)', alignItems: 'end', padding: '28px 0', borderBottom: '2px solid var(--color-divider)' }}>
             <div className="stack" style={{ gap: 12 }}>
-              <h2 className="hl" style={{ fontSize: 'calc(clamp(26px,2.6vw,42px) * var(--hs))', letterSpacing: '-.025em' }}>{t.archive.t}</h2>
+              <h2 className="hl" style={{ fontSize: 'calc(clamp(26px,2.6vw,42px) * var(--h-c))', letterSpacing: '-.025em' }}>{t.archive.t}</h2>
               <p className="body-md">{t.archive.b}</p>
             </div>
             <a href="https://www.lahachhap.com" target="_blank" rel="noopener" className="btn btn-primary self-start" style={{ justifySelf: 'start' }}>{t.archive.cta}<ArrowUpRight /></a>
@@ -135,7 +135,7 @@ export default function JournalPage() {
             <div className="label" style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'var(--color-accent-700)' }}>
               <span data-onair="1" style={{ width: 10, height: 10, background: 'var(--color-accent)', display: 'block' }} />{t.pod.tag}
             </div>
-            <h2 className="hl" style={{ fontSize: 'calc(clamp(32px,3.8vw,64px) * var(--hs))', letterSpacing: '-.035em' }}>{t.pod.title}</h2>
+            <h2 className="hl" style={{ fontSize: 'calc(clamp(32px,3.8vw,64px) * var(--h-c))', letterSpacing: '-.035em' }}>{t.pod.title}</h2>
             <p className="body-md">{t.pod.body}</p>
             {subbed ? (
               <p role="status" style={{ fontWeight: 800, color: 'var(--color-accent-700)', maxWidth: '44ch' }}>{t.pod.done}</p>

@@ -66,7 +66,7 @@ export default function ContactPage() {
       <section id="top" className="on-accent">
         <div className="wrap stack" style={{ paddingTop: 'calc(var(--hh, 66px) + clamp(56px,10vh,128px))', paddingBottom: 'clamp(56px,9vh,100px)', gap: 'clamp(40px,7vh,80px)' }}>
           <Kicker>{t.hero.k}</Kicker>
-          <HeroLines lines={t.hero.lines} style={{ fontSize: 'calc(clamp(48px,10.4vw,200px) * var(--hs))' }} />
+          <HeroLines lines={t.hero.lines} style={{ fontSize: 'calc(clamp(48px,10.4vw,200px) * var(--h-a))' }} />
           <div data-hero-fade="1"><ContactCards /></div>
         </div>
       </section>
@@ -74,7 +74,7 @@ export default function ContactPage() {
       <section className="wrap sec grid-split" style={{ gap: '48px clamp(40px,6vw,112px)' }}>
         <div className="stack" style={{ gap: 24 }}>
           <Kicker>{t.form.k}</Kicker>
-          <h2 className="headline" style={{ marginLeft: '-.04em', fontSize: 'calc(clamp(36px,4.6vw,80px) * var(--hs))' }}>{t.form.title}</h2>
+          <h2 className="headline" style={{ marginLeft: '-.04em', fontSize: 'calc(clamp(36px,4.6vw,80px) * var(--h-b))' }}>{t.form.title}</h2>
           <p className="body-lg" style={{ fontSize: 'clamp(17px,1.35vw,20px)', maxWidth: '40ch' }}>{t.form.body}</p>
           <div className="media" style={{ aspectRatio: '4/3', marginTop: 8 }}>
             <img data-parallax="-0.08" className="px-md" src={img('badri/portrait-namaste', 'md')} alt={t.form.alt} loading="lazy" style={{ objectPosition: '50% 22%' }} />
@@ -108,7 +108,7 @@ export default function ContactPage() {
             </form>
           ) : (
             <div role="status" className="stack bt-ink" style={{ paddingTop: 24, gap: 20 }}>
-              <span className="display" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(40px,5vw,88px) * var(--hs))', color: 'var(--color-accent)' }}>{t.done.t}</span>
+              <span className="display" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(40px,5vw,88px) * var(--h-b))', color: 'var(--color-accent)' }}>{t.done.t}</span>
               <p style={{ fontSize: 18, maxWidth: '40ch' }}>{t.done.b} <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></p>
               <button type="button" className="btn btn-secondary self-start" onClick={() => { setSent(false); setF(EMPTY); }}>{t.done.again}</button>
             </div>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                   <span className="label" style={{ color: 'color-mix(in srgb,var(--color-bg) 70%,transparent)' }}>{w.k}</span>
                 </div>
                 <div className="stack" style={{ flex: '1 1 420px', gap: 8, minWidth: 0 }}>
-                  <span className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(30px,3.6vw,60px) * var(--hs))', letterSpacing: '-.035em' }}>{w.v}</span>
+                  <span className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(30px,3.6vw,60px) * var(--h-c))', letterSpacing: '-.035em' }}>{w.v}</span>
                   <span style={{ fontSize: 16, lineHeight: 1.55, color: 'color-mix(in srgb,var(--color-bg) 75%,transparent)', maxWidth: '34ch' }}>{w.d}</span>
                 </div>
               </div>

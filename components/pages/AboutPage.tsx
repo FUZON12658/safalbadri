@@ -92,7 +92,7 @@ export default function AboutPage() {
 
   return (
     <Shell page="about">
-      <PageHero kicker={t.hero.k} lines={t.hero.lines} lede={t.hero.lede} size="calc(clamp(42px,6.4vw,124px) * var(--hs))">
+      <PageHero kicker={t.hero.k} lines={t.hero.lines} lede={t.hero.lede} size="calc(clamp(42px,6.4vw,124px) * var(--h-a))">
         <div data-grow="1" className="media hero-figure" style={{ aspectRatio: '21/10', minHeight: 300 }}>
           <img src={img('badri/chairman-desk')} alt={t.hero.alt} fetchPriority="high" style={{ objectPosition: '50% 32%' }} />
         </div>
@@ -105,7 +105,7 @@ export default function AboutPage() {
             <div key={i} style={{ padding: '22px 24px 28px' }}>
               <div data-reveal={i} className="stack" style={{ gap: 10 }}>
                 <span className="label muted">{f.k}</span>
-                <span className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(24px,2.2vw,34px) * var(--hs))', letterSpacing: '-.02em' }}>{f.v}</span>
+                <span className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(24px,2.2vw,34px) * var(--h-c))', letterSpacing: '-.02em' }}>{f.v}</span>
               </div>
             </div>
           ))}
@@ -116,7 +116,7 @@ export default function AboutPage() {
         <div style={{ flex: '1 1 340px', minWidth: 0 }}>
           <div className="stack" style={{ position: 'sticky', top: 'calc(var(--hh, 66px) + 40px)', gap: 24 }}>
             <Kicker>{t.words.k}</Kicker>
-            <blockquote className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(28px,3.2vw,54px) * var(--hs))', letterSpacing: '-.03em', textWrap: 'pretty' }}>{t.words.quote}</blockquote>
+            <blockquote className="hl" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(28px,3.2vw,54px) * var(--h-c))', letterSpacing: '-.03em', textWrap: 'pretty' }}>{t.words.quote}</blockquote>
             <span data-story-idx="1" className="tnum" style={{ fontSize: 13, fontWeight: 800 }}>{p(1)} / {p(t.chapters.length)}</span>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
             <article key={i} data-chapter="1" data-dim="1" className="stack bt" style={{ gap: 16, padding: '36px 0 44px', transition: 'opacity .5s ease' }}>
               <div style={{ display: 'flex', gap: 16, alignItems: 'baseline' }}>
                 <span className="num" style={{ fontSize: 15 }}>{p(i + 1)}</span>
-                <h2 className="hl" style={{ fontSize: 'calc(clamp(28px,2.8vw,46px) * var(--hs))', letterSpacing: '-.025em' }}>{c.title}</h2>
+                <h2 className="hl" style={{ fontSize: 'calc(clamp(28px,2.8vw,46px) * var(--h-c))', letterSpacing: '-.025em' }}>{c.title}</h2>
               </div>
               <p className="body-lg" style={{ fontSize: 'clamp(18px,1.45vw,22px)' }}>{c.body}</p>
             </article>
@@ -146,13 +146,13 @@ export default function AboutPage() {
       <section className="on-accent">
         <div className="wrap" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(96px,14vh,180px)' }}>
           <Kicker>{t.vision.k}</Kicker>
-          <h2 className="display" style={{ marginTop: 28, fontSize: 'calc(clamp(48px,8.4vw,156px) * var(--hs))', maxWidth: '11em' }}>{t.vision.title}</h2>
+          <h2 className="display" style={{ marginTop: 28, fontSize: 'calc(clamp(48px,8.4vw,156px) * var(--h-b))', maxWidth: '11em' }}>{t.vision.title}</h2>
           <div className="cells cols-300" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
             {t.vision.items.map((v, i) => (
               <div key={i} style={{ padding: '28px 24px 40px 4px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 18 }}>
-                  <span className="stat" style={{ fontSize: 'calc(clamp(48px,5vw,88px) * var(--hs))', color: 'var(--color-accent-200)' }}>{p(i + 1)}</span>
-                  <h3 className="hl" style={{ fontSize: 'calc(clamp(26px,2.4vw,38px) * var(--hs))', letterSpacing: '-.025em' }}>{v.title}</h3>
+                  <span className="stat" style={{ fontSize: 'calc(clamp(48px,5vw,88px) * var(--h-b))', color: 'var(--color-accent-200)' }}>{p(i + 1)}</span>
+                  <h3 className="hl" style={{ fontSize: 'calc(clamp(26px,2.4vw,38px) * var(--h-c))', letterSpacing: '-.025em' }}>{v.title}</h3>
                   <p className="body-md" style={{ fontSize: 17, maxWidth: '40ch' }}>{v.body}</p>
                 </div>
               </div>
@@ -167,7 +167,7 @@ export default function AboutPage() {
         </div>
         <div className="stack" style={{ gap: 24 }}>
           <Kicker>{t.speak.k}</Kicker>
-          <h2 className="headline" style={{ fontSize: 'calc(clamp(36px,4.6vw,80px) * var(--hs))' }}>{t.speak.title}</h2>
+          <h2 className="headline" style={{ fontSize: 'calc(clamp(36px,4.6vw,80px) * var(--h-b))' }}>{t.speak.title}</h2>
           {t.speak.paras.map((pp, i) => <p key={i} className="body-lg" style={{ fontSize: 'clamp(17px,1.35vw,20px)' }}>{pp}</p>)}
           <div className="stack">
             {t.speak.topics.map((x, i) => (

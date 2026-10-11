@@ -282,7 +282,7 @@ export default function HomePage() {
           </div>
           {/* Appears on the open background left of his head once the photo is full screen; placed by the motion engine. */}
           <div data-hero-panel="1" className="home-hero__panel">
-            <p style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(22px,2.3vw,34px) * var(--hs))', lineHeight: 'var(--hl)', letterSpacing: '-.015em', textWrap: 'pretty' }}>{t.hero.lede}</p>
+            <p style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(22px,2.3vw,34px) * var(--h-c))', lineHeight: 'var(--hl)', letterSpacing: '-.015em', textWrap: 'pretty' }}>{t.hero.lede}</p>
             <div className="btn-row">
               <Link href="/about" className="btn btn-light">{t.hero.cta1}</Link>
               <Link href="/contact" className="btn btn-ghost-light">{t.hero.cta2}</Link>
@@ -294,7 +294,7 @@ export default function HomePage() {
       {/* 02 Conviction */}
       <section className="wrap" style={{ paddingTop: 'clamp(96px,16vh,200px)', paddingBottom: 'clamp(72px,12vh,140px)' }}>
         <div className="kicker">{t.k.conviction}</div>
-        <Manifesto text={t.manifesto} style={{ margin: '32px 0 0 -.058em', fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(32px,5.6vw,96px) * var(--hs))', lineHeight: 'var(--hl)', letterSpacing: '-.035em', maxWidth: '16em', textWrap: 'pretty' }} />
+        <Manifesto text={t.manifesto} style={{ margin: '32px 0 0 -.058em', fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(32px,5.6vw,96px) * var(--h-b))', lineHeight: 'var(--hl)', letterSpacing: '-.035em', maxWidth: '16em', textWrap: 'pretty' }} />
         <div className="cells cols-220" style={{ marginTop: 'clamp(64px,10vh,128px)' }}>
           {t.stats.map((s, i) => (
             <div key={i} style={{ padding: '28px 24px 32px' }}>
@@ -327,12 +327,12 @@ export default function HomePage() {
           </div>
           <div className="stack" style={{ flex: '1.25 1 440px', minWidth: 0 }}>
             <div className="kicker">{t.k.story}</div>
-            <blockquote data-reveal="0" style={{ marginTop: 28, fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(30px,3.8vw,64px) * var(--hs))', lineHeight: 'var(--hl)', letterSpacing: '-.03em', textWrap: 'pretty' }}>{t.story.quote}</blockquote>
+            <blockquote data-reveal="0" style={{ marginTop: 28, fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(30px,3.8vw,64px) * var(--h-c))', lineHeight: 'var(--hl)', letterSpacing: '-.03em', textWrap: 'pretty' }}>{t.story.quote}</blockquote>
             {t.story.chapters.map((c, i) => (
               <article key={i} data-chapter="1" data-cap={c.cap} className="story-chapter stack" style={{ minHeight: '58vh', justifyContent: 'center', gap: 18, borderTop: '2px solid var(--color-divider)', marginTop: 56, padding: '40px 0' }}>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'baseline' }}>
                   <span className="num" style={{ fontSize: 15 }}>{p(i + 1)}</span>
-                  <h3 className="hl" style={{ fontSize: 'calc(clamp(28px,2.6vw,42px) * var(--hs))', letterSpacing: '-.02em' }}>{c.title}</h3>
+                  <h3 className="hl" style={{ fontSize: 'calc(clamp(28px,2.6vw,42px) * var(--h-c))', letterSpacing: '-.02em' }}>{c.title}</h3>
                 </div>
                 <p className="body-lg" style={{ fontSize: 'clamp(18px,1.45vw,22px)', lineHeight: 1.6, maxWidth: '42ch' }}>{c.body}</p>
               </article>
@@ -346,7 +346,7 @@ export default function HomePage() {
       <section id="work" className="bt">
         <div className="wrap stack" style={{ paddingTop: 'clamp(80px,12vh,160px)', paddingBottom: 'clamp(40px,6vh,64px)', gap: 24 }}>
           <div className="kicker">{t.k.work}</div>
-          <h2 className="headline" style={{ marginLeft: '-.058em', fontSize: 'calc(clamp(40px,6.4vw,112px) * var(--hs))', maxWidth: '13em', textWrap: 'balance' }}>{t.work.title}</h2>
+          <h2 className="headline" style={{ marginLeft: '-.058em', fontSize: 'calc(clamp(40px,6.4vw,112px) * var(--h-b))', maxWidth: '13em', textWrap: 'balance' }}>{t.work.title}</h2>
         </div>
         <div className="wrap sec-bot">
           {t.work.panels.map((pn, i) => (
@@ -357,7 +357,7 @@ export default function HomePage() {
                     <span className="tnum" style={{ color: 'var(--color-accent-700)' }}>{p(i + 1)} / {p(t.work.panels.length)}</span>
                     <span className="muted" style={{ textAlign: 'right' }}>{pn.kicker}</span>
                   </div>
-                  <h3 className="display" style={{ marginTop: 8, fontSize: 'calc(clamp(52px,8vw,144px) * var(--hs))' }}>{pn.title}</h3>
+                  <h3 className="display" style={{ marginTop: 8, fontSize: 'calc(clamp(52px,8vw,144px) * var(--h-b))' }}>{pn.title}</h3>
                   <p style={{ marginTop: 'auto', fontSize: 'clamp(18px,1.45vw,22px)', lineHeight: 1.6, maxWidth: '40ch', textWrap: 'pretty' }}>{pn.body}</p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                     {pn.tags.map((tg) => <span key={tg} className="tag">{tg}</span>)}
@@ -379,7 +379,7 @@ export default function HomePage() {
           <div className="journey__head">
             <div className="stack" style={{ gap: 14, minWidth: 0 }}>
               <div className="kicker">{t.k.journey}</div>
-              <h2 className="headline" style={{ fontSize: 'calc(clamp(28px,min(3.6vw,6.4vh),64px) * var(--hs))', letterSpacing: '-.035em', maxWidth: '16em', textWrap: 'balance' }}>{t.journey.title}</h2>
+              <h2 className="headline" style={{ fontSize: 'calc(clamp(28px,min(3.6vw,6.4vh),64px) * var(--h-c))', letterSpacing: '-.035em', maxWidth: '16em', textWrap: 'balance' }}>{t.journey.title}</h2>
               <p className="journey__lede" style={{ fontSize: 15, lineHeight: 1.5, maxWidth: '46ch', color: 'color-mix(in srgb,var(--color-text) 78%,transparent)' }}>{t.journey.lede}</p>
             </div>
             <div className="stack" style={{ alignItems: 'flex-end', gap: 6, minWidth: 0, textAlign: 'right' }}>
@@ -412,7 +412,7 @@ export default function HomePage() {
                       ) : (
                         <div className="stack" style={{ position: 'absolute', inset: 0, padding: 'clamp(14px,1.6vw,24px)', justifyContent: 'space-between', color: pal[1] }}>
                           <span style={{ fontSize: 12, letterSpacing: '.1em', textTransform: 'uppercase', fontWeight: 600, opacity: 0.8 }}>{s.yr} · {s.meta}</span>
-                          <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(44px,min(5vw,9vh),96px) * var(--hs))', lineHeight: 0.9, letterSpacing: '-.05em' }}>{medium}</span>
+                          <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(44px,min(5vw,9vh),96px) * var(--h-b))', lineHeight: 0.9, letterSpacing: '-.05em' }}>{medium}</span>
                         </div>
                       )}
                     </div>
@@ -422,7 +422,7 @@ export default function HomePage() {
                 );
               })}
               <article className="stack on-accent" style={{ flex: 'none', width: 'clamp(280px,29vw,460px)', height: '100%', justifyContent: 'flex-end', gap: 20, padding: 'clamp(20px,2.4vw,36px)' }}>
-                <h3 className="hl" style={{ fontSize: 'calc(clamp(30px,3vw,52px) * var(--hs))', letterSpacing: '-.035em' }}>{t.journey.endT}</h3>
+                <h3 className="hl" style={{ fontSize: 'calc(clamp(30px,3vw,52px) * var(--h-c))', letterSpacing: '-.035em' }}>{t.journey.endT}</h3>
                 <Link href="/journey" className="btn btn-light self-start">{t.links.journey}<ArrowRight /></Link>
               </article>
             </div>
@@ -443,7 +443,7 @@ export default function HomePage() {
         <div className="wrap grid-split end sec-top">
           <div className="stack" style={{ gap: 28 }}>
             <div className="kicker">{t.k.impact}</div>
-            <h2 className="display" style={{ fontSize: 'calc(clamp(48px,8vw,148px) * var(--hs))' }}>{t.impact.title}</h2>
+            <h2 className="display" style={{ fontSize: 'calc(clamp(48px,8vw,148px) * var(--h-b))' }}>{t.impact.title}</h2>
           </div>
           <div className="stack" style={{ gap: 20 }}>
             <p style={{ maxWidth: '40ch', fontSize: 'clamp(18px,1.5vw,22px)', lineHeight: 1.55, textWrap: 'pretty' }}>{t.impact.body}</p>
@@ -461,7 +461,7 @@ export default function HomePage() {
             {t.impact.facts.map((f, i) => (
               <div key={i} style={{ padding: '28px 24px 36px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 12, minHeight: 200 }}>
-                  <span className="stat" style={{ fontSize: 'calc(clamp(48px,5vw,88px) * var(--hs))' }}>{f.n}</span>
+                  <span className="stat" style={{ fontSize: 'calc(clamp(48px,5vw,88px) * var(--h-b))' }}>{f.n}</span>
                   <span className="label" style={{ marginTop: 'auto' }}>{f.l}</span>
                   <span style={{ fontSize: 16, lineHeight: 1.55, color: 'color-mix(in srgb,var(--color-text) 82%,transparent)', maxWidth: '34ch' }}>{f.d}</span>
                 </div>
@@ -477,7 +477,7 @@ export default function HomePage() {
           <div className="grid-split end" style={{ gap: '40px clamp(32px,6vw,112px)', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,360px),1fr))' }}>
             <div className="stack" style={{ gap: 28 }}>
               <div className="kicker">{t.k.vision}</div>
-              <h2 className="display" style={{ fontSize: 'calc(clamp(48px,7.4vw,140px) * var(--hs))', maxWidth: '11em' }}>{t.vision.title}</h2>
+              <h2 className="display" style={{ fontSize: 'calc(clamp(48px,7.4vw,140px) * var(--h-b))', maxWidth: '11em' }}>{t.vision.title}</h2>
             </div>
             <figure className="stack" style={{ gap: 10, maxWidth: 440, width: '100%', justifySelf: 'end' }}>
               <div className="media" style={{ aspectRatio: '4/5', background: '#fff' }}>
@@ -490,7 +490,7 @@ export default function HomePage() {
               <div key={i} data-reveal="0" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,320px),1fr))', gap: '20px clamp(24px,4vw,72px)', padding: '36px 0 44px', borderTop: '2px solid color-mix(in srgb,var(--color-bg) 35%,transparent)', alignItems: 'baseline' }}>
                 <div style={{ display: 'flex', gap: 20, alignItems: 'baseline' }}>
                   <span className="num" style={{ fontSize: 15 }}>{p(i + 1)}</span>
-                  <h3 className="hl" style={{ fontSize: 'calc(clamp(28px,3.2vw,52px) * var(--hs))', letterSpacing: '-.03em' }}>{v.title}</h3>
+                  <h3 className="hl" style={{ fontSize: 'calc(clamp(28px,3.2vw,52px) * var(--h-c))', letterSpacing: '-.03em' }}>{v.title}</h3>
                 </div>
                 <p className="body-md" style={{ maxWidth: '52ch' }}>{v.body}</p>
               </div>
@@ -506,7 +506,7 @@ export default function HomePage() {
           <div className="grid-split grid-split--380 end" style={{ gap: '24px clamp(32px,6vw,112px)' }}>
             <div className="stack" style={{ gap: 24 }}>
               <div className="kicker">{t.k.ventures}</div>
-              <h2 className="headline" style={{ marginLeft: '-.058em', fontSize: 'calc(clamp(40px,6.4vw,112px) * var(--hs))' }}>{t.ventures.title}</h2>
+              <h2 className="headline" style={{ marginLeft: '-.058em', fontSize: 'calc(clamp(40px,6.4vw,112px) * var(--h-b))' }}>{t.ventures.title}</h2>
             </div>
             <div className="stack" style={{ gap: 20 }}>
               <p className="body-md" style={{ fontSize: 'clamp(18px,1.4vw,21px)' }}>{t.ventures.lede}</p>
@@ -520,7 +520,7 @@ export default function HomePage() {
                 <Link key={i} href="/ventures" className="hover-row bb" onMouseEnter={() => motion.current?.showPreview(src ? img(src, 'md') : null)}
                   style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '12px clamp(16px,2.4vw,40px)', padding: 'clamp(20px,2.6vw,36px) 0', color: 'var(--color-text)', textDecoration: 'none' }}>
                   <span className="num" style={{ flex: '0 0 44px' }}>{p(i + 1)}</span>
-                  <span className="hl" style={{ flex: '1 1 320px', minWidth: 0, fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(28px,3.6vw,60px) * var(--hs))', letterSpacing: '-.035em' }}>{v.name}</span>
+                  <span className="hl" style={{ flex: '1 1 320px', minWidth: 0, fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(28px,3.6vw,60px) * var(--h-c))', letterSpacing: '-.035em' }}>{v.name}</span>
                   <span className="stack" style={{ flex: '1 1 220px', minWidth: 0, gap: 4 }}>
                     <span style={{ fontSize: 17, fontWeight: 600 }}>{v.role}</span>
                     <span className="muted" style={{ fontSize: 13, letterSpacing: '.06em', textTransform: 'uppercase' }}>{v.group} · {v.meta}</span>
@@ -538,7 +538,7 @@ export default function HomePage() {
         <div className="wrap sec grid-split" style={{ gap: '48px clamp(40px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 24 }}>
             <div className="kicker">{t.k.voice}</div>
-            <h2 className="headline" style={{ marginLeft: '-.058em', fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--hs))' }}>{t.voice.title}</h2>
+            <h2 className="headline" style={{ marginLeft: '-.058em', fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--h-b))' }}>{t.voice.title}</h2>
             <p className="body-md" style={{ fontSize: 'clamp(18px,1.4vw,21px)', maxWidth: '46ch' }}>{t.voice.body}</p>
             <div className="btn-row">
               <Link href="/contact" className="btn btn-primary">{t.voice.cta}</Link>
@@ -564,7 +564,7 @@ export default function HomePage() {
               <div className="label" style={{ display: 'flex', alignItems: 'center', gap: 10, color: 'var(--color-accent-700)' }}>
                 <span data-onair="1" style={{ width: 10, height: 10, background: 'var(--color-accent)', display: 'block' }} />{t.voice.podTag}
               </div>
-              <h3 className="hl" style={{ fontSize: 'calc(clamp(32px,3.8vw,64px) * var(--hs))', letterSpacing: '-.035em' }}>{t.voice.podT}</h3>
+              <h3 className="hl" style={{ fontSize: 'calc(clamp(32px,3.8vw,64px) * var(--h-c))', letterSpacing: '-.035em' }}>{t.voice.podT}</h3>
               <p className="body-md">{t.voice.podB}</p>
               <Link href="/journal#podcast" className="btn btn-secondary self-start">{lang === 'ne' ? 'जानकारी पाउनुहोस्' : 'Get notified'}<ArrowRight /></Link>
             </div>
@@ -577,7 +577,7 @@ export default function HomePage() {
         <div className="wrap" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', gap: 24, flexWrap: 'wrap' }}>
           <div className="stack" style={{ gap: 24 }}>
             <div className="kicker">{t.k.field}</div>
-            <h2 className="display" style={{ fontSize: 'calc(clamp(48px,8vw,148px) * var(--hs))' }}>{t.field.title}</h2>
+            <h2 className="display" style={{ fontSize: 'calc(clamp(48px,8vw,148px) * var(--h-b))' }}>{t.field.title}</h2>
           </div>
           <Link href="/gallery" className="btn btn-secondary">{t.links.field}<ArrowRight /></Link>
         </div>

@@ -74,7 +74,7 @@ export default function JourneyPage() {
       <PageHero
         kicker={t.hero.k}
         lines={t.hero.lines}
-        size="calc(clamp(42px,6.4vw,124px) * var(--hs))"
+        size="calc(clamp(42px,6.4vw,124px) * var(--h-a))"
         aside={
           <div data-hero-fade="1" className="stack" style={{ gap: 12 }}>
             <p className="lede">{t.hero.lede}</p>
@@ -91,7 +91,7 @@ export default function JourneyPage() {
         <div style={{ flex: '1 1 300px', minWidth: 0 }}>
           <div className="stack" style={{ position: 'sticky', top: 'calc(var(--hh, 66px) + 40px)', gap: 16 }}>
             <Kicker>{t.tl.k}</Kicker>
-            <div data-chapter-big="1" className="display" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(72px,11vw,200px) * var(--hs))', letterSpacing: '-.06em', color: 'var(--color-accent)', minHeight: '1em' }}>{t.stations[0].big}</div>
+            <div data-chapter-big="1" className="display" style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(72px,11vw,200px) * var(--h-b))', letterSpacing: '-.06em', color: 'var(--color-accent)', minHeight: '1em' }}>{t.stations[0].big}</div>
             <div className="tnum" style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 13, fontWeight: 800 }}>
               <span data-story-idx="1">{p(1)} / {p(total)}</span>
               <span data-story-cap="1" className="label muted">{t.stations[0].meta}</span>
@@ -114,7 +114,7 @@ export default function JourneyPage() {
                   {now && <span className="tag tag-accent">{t.now}</span>}
                   <span className="muted" style={{ fontSize: 13, letterSpacing: '.06em', textTransform: 'uppercase', fontWeight: 600 }}>{s.meta}</span>
                 </div>
-                <h2 className="hl" style={{ fontSize: 'calc(clamp(32px,3.6vw,60px) * var(--hs))', letterSpacing: '-.035em' }}>{s.name}</h2>
+                <h2 className="hl" style={{ fontSize: 'calc(clamp(32px,3.6vw,60px) * var(--h-c))', letterSpacing: '-.035em' }}>{s.name}</h2>
                 <p className="body-lg" style={{ fontSize: 'clamp(17px,1.4vw,21px)' }}>{s.desc}</p>
                 {im && 'cap' in s && (
                   <figure className="stack" style={{ marginTop: 8, gap: 8 }}>
@@ -135,7 +135,7 @@ export default function JourneyPage() {
           <div className="grid-split end">
             <div className="stack" style={{ gap: 28 }}>
               <Kicker>{t.lead.k}</Kicker>
-              <h2 className="display" style={{ fontSize: 'calc(clamp(44px,7vw,128px) * var(--hs))', maxWidth: '12em' }}>{t.lead.title}</h2>
+              <h2 className="display" style={{ fontSize: 'calc(clamp(44px,7vw,128px) * var(--h-b))', maxWidth: '12em' }}>{t.lead.title}</h2>
             </div>
             <figure className="stack" style={{ gap: 10, maxWidth: 420, justifySelf: 'end', width: '100%' }}>
               <div className="media" style={{ aspectRatio: '4/5', background: 'var(--color-accent-700)' }}>
@@ -149,7 +149,7 @@ export default function JourneyPage() {
               <div key={i} style={{ padding: '28px 24px 40px 4px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 16 }}>
                   <span className="num" style={{ fontSize: 15 }}>{p(i + 1)}</span>
-                  <h3 className="hl" style={{ fontSize: 'calc(clamp(24px,2.2vw,34px) * var(--hs))', letterSpacing: '-.025em' }}>{ld.t}</h3>
+                  <h3 className="hl" style={{ fontSize: 'calc(clamp(24px,2.2vw,34px) * var(--h-c))', letterSpacing: '-.025em' }}>{ld.t}</h3>
                   <p className="body-md" style={{ fontSize: 17, maxWidth: '40ch' }}>{ld.b}</p>
                 </div>
               </div>

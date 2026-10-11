@@ -53,7 +53,7 @@ export default function VenturesPage() {
     <Shell page="ventures">
       <section id="top" className="wrap page-hero" style={{ paddingBottom: 'clamp(64px,10vh,120px)' }}>
         <Kicker>{t.hero.k}</Kicker>
-        <HeroLines lines={t.hero.lines} style={{ marginTop: 24, fontSize: 'calc(clamp(52px,9vw,168px) * var(--hs))' }} />
+        <HeroLines lines={t.hero.lines} style={{ marginTop: 24, fontSize: 'calc(clamp(52px,9vw,168px) * var(--h-a))' }} />
         <div data-hero-fade="1" className="cells cols-260" style={{ marginTop: 'clamp(40px,7vh,80px)', borderTopColor: 'var(--color-text)' }}>
           <div className="stack" style={{ padding: '24px 24px 28px 0', gap: 10 }}>
             <span data-count="100" data-suf="+" className="stat">{num(100, lang)}+</span>
@@ -80,7 +80,7 @@ export default function VenturesPage() {
                     <span className="tnum" style={{ color: 'var(--color-accent-700)' }}>{p(i + 1)} / {p(t.rows.length)}</span>
                     <span className="tag" style={{ fontSize: 11, padding: '4px 8px' }}>{r.group}</span>
                   </div>
-                  <h2 className="display" style={{ marginTop: 8, marginLeft: '-.05em', fontSize: 'calc(clamp(36px,5.2vw,100px) * var(--hs))', overflowWrap: 'break-word', hyphens: 'manual' }}>{r.name}</h2>
+                  <h2 className="display" style={{ marginTop: 8, marginLeft: '-.05em', fontSize: 'calc(clamp(36px,5.2vw,100px) * var(--h-b))', overflowWrap: 'break-word', hyphens: 'manual' }}>{r.name}</h2>
                   <div className="stack" style={{ gap: 4 }}>
                     <span style={{ fontSize: 19, fontWeight: 800 }}>{r.role}</span>
                     <span className="muted" style={{ fontSize: 13, letterSpacing: '.06em', textTransform: 'uppercase' }}>{r.meta}</span>
@@ -94,7 +94,7 @@ export default function VenturesPage() {
                   ) : (
                     <div className="stack" style={{ position: 'absolute', inset: 0, padding: 'clamp(20px,2.4vw,36px)', justifyContent: 'space-between', color: 'var(--color-bg)' }}>
                       <span className="label" style={{ opacity: 0.8 }}>{r.meta}</span>
-                      <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(56px,7vw,128px) * var(--hs))', lineHeight: 0.85, letterSpacing: '-.06em', overflowWrap: 'anywhere' }}>{v.mark}</span>
+                      <span style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(56px,7vw,128px) * var(--h-b))', lineHeight: 0.85, letterSpacing: '-.06em', overflowWrap: 'anywhere' }}>{v.mark}</span>
                     </div>
                   )}
                 </div>
@@ -108,7 +108,7 @@ export default function VenturesPage() {
         <div className="wrap grid-split grid-split--380 end" style={{ paddingTop: 'clamp(80px,12vh,160px)', paddingBottom: 'clamp(80px,12vh,160px)', gap: '24px clamp(32px,6vw,112px)' }}>
           <div className="stack" style={{ gap: 20 }}>
             <Kicker>{t.mike.k}</Kicker>
-            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--hs))' }}>{t.mike.title}</h2>
+            <h2 className="headline" style={{ fontSize: 'calc(clamp(40px,5.6vw,96px) * var(--h-b))' }}>{t.mike.title}</h2>
           </div>
           <div className="stack" style={{ gap: 20 }}>
             <p className="body-lg" style={{ maxWidth: '44ch' }}>{t.mike.body}</p>
@@ -118,7 +118,7 @@ export default function VenturesPage() {
       </section>
 
       <section className="wrap" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(96px,14vh,180px)' }}>
-        <Manifesto text={t.principle} style={{ marginLeft: '-.05em', fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(32px,5vw,88px) * var(--hs))', lineHeight: 'var(--hl)', letterSpacing: '-.035em', maxWidth: '17em', textWrap: 'pretty' }} />
+        <Manifesto text={t.principle} style={{ marginLeft: '-.05em', fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(32px,5vw,88px) * var(--h-b))', lineHeight: 'var(--hl)', letterSpacing: '-.035em', maxWidth: '17em', textWrap: 'pretty' }} />
       </section>
     </Shell>
   );
