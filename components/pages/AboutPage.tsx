@@ -147,7 +147,7 @@ export default function AboutPage() {
         <div className="wrap" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(96px,14vh,180px)' }}>
           <Kicker>{t.vision.k}</Kicker>
           <h2 className="display" style={{ marginTop: 28, fontSize: 'calc(clamp(48px,8.4vw,156px) * var(--h-b))', maxWidth: '11em' }}>{t.vision.title}</h2>
-          <div className="cells cols-300" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
+          <div className="cells cols-3x" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
             {t.vision.items.map((v, i) => (
               <div key={i} style={{ padding: '28px 24px 40px 4px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 18 }}>

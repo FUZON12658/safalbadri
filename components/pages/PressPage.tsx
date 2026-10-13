@@ -100,7 +100,7 @@ export default function PressPage() {
       <section className="wrap sec">
         <Kicker>{t.lead.k}</Kicker>
         <h2 className="headline" style={{ marginTop: 24, marginLeft: '-.04em', fontSize: 'calc(clamp(34px,4.2vw,72px) * var(--h-b))', letterSpacing: '-.035em', maxWidth: '16em' }}>{t.lead.title}</h2>
-        <div className="cells cols-300" style={{ marginTop: 'clamp(40px,7vh,80px)' }}>
+        <div className="cells cols-3x" style={{ marginTop: 'clamp(40px,7vh,80px)' }}>
           {t.lead.items.map((ld, i) => (
             <div key={i} style={{ padding: '28px 24px 36px' }}>
               <div data-reveal={i} className="stack" style={{ gap: 14, minHeight: 200 }}>

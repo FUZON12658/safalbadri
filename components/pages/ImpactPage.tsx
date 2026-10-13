@@ -90,7 +90,7 @@ export default function ImpactPage() {
       </PageHero>
 
       <section className="wrap" style={{ paddingTop: 'clamp(72px,11vh,140px)' }}>
-        <div className="cells cols-280">
+        <div className="cells cols-3x">
           {t.facts.map((f, i) => (
             <div key={i} style={{ padding: '28px 24px 36px' }}>
               <div data-reveal={i} className="stack" style={{ gap: 12, minHeight: 240 }}>

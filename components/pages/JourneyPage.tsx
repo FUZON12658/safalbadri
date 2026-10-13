@@ -144,7 +144,7 @@ export default function JourneyPage() {
               <figcaption style={{ fontSize: 13, color: 'color-mix(in srgb,var(--color-bg) 75%,transparent)' }}>{t.lead.figCap}</figcaption>
             </figure>
           </div>
-          <div className="cells cols-300" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
+          <div className="cells cols-3x" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
             {t.lead.items.map((ld, i) => (
               <div key={i} style={{ padding: '28px 24px 40px 4px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 16 }}>

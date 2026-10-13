@@ -105,7 +105,7 @@ export default function JournalPage() {
       ) : (
         <section className="wrap" style={{ paddingTop: 'clamp(56px,9vh,112px)', paddingBottom: 'clamp(80px,12vh,160px)' }}>
           <div className="label" style={{ paddingBottom: 16, borderBottom: '2px solid var(--color-text)' }}>{t.topicsK}</div>
-          <div className="cells cols-300" style={{ borderTop: 0 }}>
+          <div className="cells cols-3x" style={{ borderTop: 0 }}>
             {t.topics.map((x, i) => (
               <div key={x.k} style={{ padding: '28px 24px 36px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 16, minHeight: 220 }}>

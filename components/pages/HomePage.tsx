@@ -297,7 +297,7 @@ export default function HomePage() {
       <section className="wrap" style={{ paddingTop: 'clamp(96px,16vh,200px)', paddingBottom: 'clamp(72px,12vh,140px)' }}>
         <div className="kicker">{t.k.conviction}</div>
         <Manifesto text={t.manifesto} style={{ margin: '32px 0 0 -.058em', fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: 'calc(clamp(32px,5.6vw,96px) * var(--h-b))', lineHeight: 'var(--hl)', letterSpacing: '-.035em', maxWidth: '16em', textWrap: 'pretty' }} />
-        <div className="cells cols-220" style={{ marginTop: 'clamp(64px,10vh,128px)' }}>
+        <div className="cells cols-4" style={{ marginTop: 'clamp(64px,10vh,128px)' }}>
           {t.stats.map((s, i) => (
             <div key={i} style={{ padding: '28px 24px 32px' }}>
               <div data-reveal={i} className="stack" style={{ justifyContent: 'space-between', gap: 20, minHeight: 180 }}>
@@ -312,17 +312,15 @@ export default function HomePage() {
       {/* Statement band: maroon into the flag's red, the flag portrait continuing out of it, warm gray
           behind him. */}
       <section className="nation" aria-labelledby="nation-title">
-        {/* Band + photo share one container that fades into the paper at top and bottom (one eased mask
-            for both, so the fade is identical across the photo's edge). */}
+        {/* Artwork layer: the gray side, the photo, and the flag continued to the left (CSS clip-paths). */}
         <div className="nation__art">
           <div className="nation__field" aria-hidden="true" />
           <div className="nation__photo">
             {/* Cut-out of him and the whole flag (scripts/cutout_flag_portrait.py). The flag's left edge is
-                trimmed, and the band reaches the flag's red exactly at that edge, so the flag continues out
-                of the background; to its right the band is warm gray. */}
+                trimmed; the flag's red and blue border are continued from that edge in CSS. */}
             <div className="nation__fig">
               <span className="nation__halo" aria-hidden="true" />
-              <img src="/images/badri/nepal-flag-cutout.webp" alt={t.nation.alt} loading="lazy" width={1364} height={1600} />
+              <img src="/images/badri/nepal-flag-cutout.webp" alt={t.nation.alt} loading="lazy" width={1379} height={1600} />
             </div>
           </div>
         </div>
@@ -484,7 +482,7 @@ export default function HomePage() {
           <figcaption className="caption caption-row"><span>{t.impact.cap}</span><span>{t.impact.credit}</span></figcaption>
         </figure>
         <div className="wrap sec-bot" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
-          <div className="cells cols-260">
+          <div className="cells cols-3x">
             {t.impact.facts.map((f, i) => (
               <div key={i} style={{ padding: '28px 24px 36px' }}>
                 <div data-reveal={i} className="stack" style={{ gap: 12, minHeight: 200 }}>

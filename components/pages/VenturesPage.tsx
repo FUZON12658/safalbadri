@@ -54,7 +54,7 @@ export default function VenturesPage() {
       <section id="top" className="wrap page-hero" style={{ paddingBottom: 'clamp(64px,10vh,120px)' }}>
         <Kicker>{t.hero.k}</Kicker>
         <HeroLines lines={t.hero.lines} style={{ marginTop: 24, fontSize: 'calc(clamp(52px,9vw,168px) * var(--h-a))' }} />
-        <div data-hero-fade="1" className="cells cols-260" style={{ marginTop: 'clamp(40px,7vh,80px)', borderTopColor: 'var(--color-text)' }}>
+        <div data-hero-fade="1" className="cells cols-3x" style={{ marginTop: 'clamp(40px,7vh,80px)', borderTopColor: 'var(--color-text)' }}>
           <div className="stack" style={{ padding: '24px 24px 28px 0', gap: 10 }}>
             <span data-count="100" data-suf="+" className="stat">{num(100, lang)}+</span>
             <span className="label">{t.hero.s1}</span>
