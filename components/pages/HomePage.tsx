@@ -72,7 +72,7 @@ const C = {
       ],
     },
     vision: {
-      title: 'Committed to nation-building.', alt: 'Badri Raj Timalsina in front of the flag of Nepal',
+      title: 'The Nepal I am working towards.',
       items: [
         { title: 'A prosperous society', body: 'A Nepal where every citizen is free to move, speak and live, and is also economically secure, educated, equal before the law, socially included and protected by the highest standards of human rights.' },
         { title: 'Good governance', body: 'Free health care and education, clean institutions and development without corruption.' },
@@ -101,6 +101,7 @@ const C = {
       podAlt: 'Badri Raj Timalsina at the microphone',
     },
     field: { title: 'In the field.', alt: 'Badri Raj Timalsina in the field' },
+    nation: { k: 'Nation-building', title: 'Committed to nation-building.', alt: 'Badri Raj Timalsina in front of the flag of Nepal' },
   },
   ne: {
     k: { conviction: '०१ / अडान', story: '०२ / कथा', work: '०३ / काम', journey: '०४ / यात्रा', impact: '०५ / प्रभाव', vision: '०६ / दृष्टि', ventures: '०७ / उद्यम', voice: '०८ / आवाज', field: '०९ / मैदानमा' },
@@ -164,7 +165,7 @@ const C = {
       ],
     },
     vision: {
-      title: 'राष्ट्र निर्माणप्रति प्रतिबद्ध।', alt: 'नेपालको झण्डासामु बद्रिराज तिमल्सिना',
+      title: 'म जुन नेपालका लागि काम गर्दैछु।',
       items: [
         { title: 'समृद्ध समाज', body: 'यस्तो नेपाल जहाँ हरेक नागरिक हिँडडुल गर्न, बोल्न र बाँच्न स्वतन्त्र मात्र होइन, आर्थिक रूपमा समृद्ध, शिक्षित, कानुनको नजरमा समान, सामाजिक रूपमा समावेशी र मानव अधिकारको उच्चतम मापदण्डले सुरक्षित होस्।' },
         { title: 'सुशासन र विकास', body: 'निःशुल्क स्वास्थ्य र शिक्षा, सुशासन र भ्रष्टाचारमुक्त विकास।' },
@@ -193,6 +194,7 @@ const C = {
       podAlt: 'माइक्रोफोनअगाडि बद्रिराज तिमल्सिना',
     },
     field: { title: 'मैदानमा।', alt: 'मैदानमा बद्रिराज तिमल्सिना' },
+    nation: { k: 'राष्ट्र निर्माण', title: 'राष्ट्र निर्माणप्रति प्रतिबद्ध।', alt: 'नेपालको झण्डासामु बद्रिराज तिमल्सिना' },
   },
 };
 
@@ -307,8 +309,33 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 03 Story */}
-      <section id="story" className="bt">
+      {/* Statement band: maroon into the flag's red, the flag portrait continuing out of it, warm gray
+          behind him. */}
+      <section className="nation" aria-labelledby="nation-title">
+        {/* Band + photo share one container that fades into the paper at top and bottom (one eased mask
+            for both, so the fade is identical across the photo's edge). */}
+        <div className="nation__art">
+          <div className="nation__field" aria-hidden="true" />
+          <div className="nation__photo">
+            {/* Cut-out of him and the whole flag (scripts/cutout_flag_portrait.py). The flag's left edge is
+                trimmed, and the band reaches the flag's red exactly at that edge, so the flag continues out
+                of the background; to its right the band is warm gray. */}
+            <div className="nation__fig">
+              <span className="nation__halo" aria-hidden="true" />
+              <img src="/images/badri/nepal-flag-cutout.webp" alt={t.nation.alt} loading="lazy" width={1364} height={1600} />
+            </div>
+          </div>
+        </div>
+        <div className="wrap nation__inner">
+          <div className="nation__text stack">
+            <div className="kicker">{t.nation.k}</div>
+            <h2 id="nation-title" data-reveal="0" className="display" style={{ fontSize: 'calc(clamp(48px,7.4vw,140px) * var(--h-a))' }}>{t.nation.title}</h2>
+          </div>
+        </div>
+      </section>
+
+      {/* 03 Story (no top rule: the statement band above fades into it) */}
+      <section id="story">
         <div className="wrap sec" style={{ display: 'flex', flexWrap: 'wrap', gap: 'clamp(40px,6vw,112px)' }}>
           <div style={{ flex: '1 1 360px', minWidth: 0 }}>
             <div className="story-sticky stack" style={{ position: 'sticky', top: 'calc(var(--hh, 66px) + 32px)', gap: 12 }}>
@@ -474,16 +501,9 @@ export default function HomePage() {
       {/* 07 Vision */}
       <section id="vision" className="on-accent">
         <div className="wrap" style={{ paddingTop: 'clamp(96px,14vh,180px)', paddingBottom: 'clamp(96px,14vh,180px)' }}>
-          <div className="grid-split end" style={{ gap: '40px clamp(32px,6vw,112px)', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,360px),1fr))' }}>
-            <div className="stack" style={{ gap: 28 }}>
-              <div className="kicker">{t.k.vision}</div>
-              <h2 className="display" style={{ fontSize: 'calc(clamp(48px,7.4vw,140px) * var(--h-b))', maxWidth: '11em' }}>{t.vision.title}</h2>
-            </div>
-            <figure className="stack" style={{ gap: 10, maxWidth: 440, width: '100%', justifySelf: 'end' }}>
-              <div className="media" style={{ aspectRatio: '4/5', background: '#fff' }}>
-                <img data-parallax="-0.06" className="px-sm" src={img('badri/nepal-flag', 'md')} alt={t.vision.alt} loading="lazy" style={{ objectPosition: '50% 20%' }} />
-              </div>
-            </figure>
+          <div className="stack" style={{ gap: 28 }}>
+            <div className="kicker">{t.k.vision}</div>
+            <h2 className="display" style={{ fontSize: 'calc(clamp(48px,7.4vw,140px) * var(--h-b))', maxWidth: '13em' }}>{t.vision.title}</h2>
           </div>
           <div className="stack" style={{ marginTop: 'clamp(56px,9vh,112px)' }}>
             {t.vision.items.map((v, i) => (
