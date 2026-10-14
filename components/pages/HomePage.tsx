@@ -14,7 +14,7 @@ const C = {
     k: { conviction: '01 / Conviction', story: '02 / Story', work: '03 / Work', journey: '04 / Journey', impact: '05 / Impact', vision: '06 / Vision', ventures: '07 / Ventures', voice: '08 / Voice', field: '09 / In the field' },
     links: { story: 'Read my full story', journey: 'See the full journey', impact: 'See all impact', vision: 'More about me', ventures: 'Explore the ventures', voice: 'Press & honours', field: 'Open the gallery' },
     hero: {
-      meta: ['Journalist', 'Media entrepreneur', 'Philanthropist'],
+      meta: ['Journalist', 'Entrepreneur', 'Philanthropist'],
       l1: 'Badri Raj', l2: 'Timalsina', alt: 'बद्रिराज तिमल्सिना', scroll: 'Scroll',
       intro: 'Twenty-four years of journalism, service and enterprise, built in Nepal and for Nepal.',
       lede: 'I could have built a life abroad. I chose to stay, to report and to build, because I believe Nepal’s future is made at home.',

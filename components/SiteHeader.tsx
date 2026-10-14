@@ -8,7 +8,7 @@ import { CONTACT, PAGES, type PageKey } from '@/content/site';
 import { Close } from './icons';
 
 const T = {
-  en: { brand: 'Badri Raj Timalsina', sub: 'Journalist · Entrepreneur', cta: 'Get in touch', menu: 'Menu', openMenu: 'Open menu', close: 'Close menu', more: 'More', langLabel: 'Language' },
+  en: { brand: 'Badri Raj Timalsina', sub: 'Journalist · Entrepreneur · Philanthropist', cta: 'Get in touch', menu: 'Menu', openMenu: 'Open menu', close: 'Close menu', more: 'More', langLabel: 'Language' },
   ne: { brand: 'बद्रिराज तिमल्सिना', sub: 'पत्रकार · उद्यमी', cta: 'सम्पर्क गर्नुहोस्', menu: 'मेनु', openMenu: 'मेनु खोल्नुहोस्', close: 'मेनु बन्द गर्नुहोस्', more: 'थप', langLabel: 'भाषा' },
 };
 
